@@ -1,0 +1,80 @@
+{
+  "name": "industri-baja-lembaran",
+  "desc": "standar-industri-hijau-untuk-baja-lembaran",
+  "metric": {
+    "bahan-baku": {
+      "sumber": [
+        "steel-slab",
+        "pelat-baja",
+        "hot-rolled-coil",
+        "cold-rolled-coil"
+      ],
+      "spesifikasi": "",
+      "penanganan": "",
+      "rasio-produk-terhadap-penggunaan-bahan-baku": {
+        "hot-metal-&-pig-iron": {
+          "blast-furnace": ">=58%"
+        },
+        "steel-slab": {
+          "basic-oxygen-furnace": ">=84%",
+          "electric-arc-furnace": ">=86%"
+        },
+        "pelat-baja": ">=86.90%",
+        "hot-roled-coil": ">=96%",
+        "cold-rolled-coil": {
+          "reversing-mill": ">=93.50%",
+          "tandem-mill": ">=92.50%"
+        }
+      },
+      "rasio-penggunaan-bahan-baku-daur-ulang-terhadap-penggunaan-bahan-baku": {
+        "steel-slab": {
+          "basic-oxygen-furnace": ">=3%",
+          "electric-arc-furnace": {
+            "scrap": ">=60%"
+          }
+        }
+      }
+    },
+    "bahan-penolong": {
+      "sumber": ["steel-slab", "cold-rolled-coil"],
+      "spesifikasi": "",
+      "penanganan": ""
+    },
+    "energi": {
+      "listrik": {
+        "steel-slab": {
+          "blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace": "<=301kWh/ton",
+          "electric-arc-furnace": {
+            "scrap": "<=762.85kWh/ton"
+          }
+        },
+        "pelat-baja": {
+          "plate-mill": "<=160kWh/ton",
+          "hot-strip-mill-dengan-shearing-line": "<=162kWh/ton"
+        },
+        "hot-roled-coil": "<=155kWh/ton",
+        "cold-rolled-coil": {
+          "reversing-mill": "<=146.75kWh/ton",
+          "tandem-mill": "<=130kWh/ton"
+        }
+      },
+      "panas": {
+        "steel-slab": {
+          "blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace": "<=301kWh/ton",
+          "electric-arc-furnace": {
+            "scrap": "<=762.85kWh/ton"
+          }
+        },
+        "pelat-baja": {
+          "plate-mill": "<=160kWh/ton",
+          "hot-strip-mill-dengan-shearing-line": "<=162kWh/ton"
+        },
+        "hot-roled-coil": "<=155kWh/ton",
+        "cold-rolled-coil": {
+          "reversing-mill": "<=146.75kWh/ton",
+          "tandem-mill": "<=130kWh/ton"
+        }
+      }
+    }
+  }
+}
