@@ -1,0 +1,61 @@
+{
+    "name": "industri-minyak-goreng-sawit",
+    "desc": "standar-industri-hijau-untuk-industri-minyak-goreng-sawit",
+    "metric": {
+        "bahan-baku": {
+            "sumber": "",
+            "spesifikasi": "",
+            "penanganan": "",
+            "rasio-produk-minyak-goreng-sawit-terhadap-bahan-baku": "<=58/100"
+        },
+        "bahan-penolong": {
+            "sumber": "",
+            "spesifikasi": "",
+            "penanganan": "",
+            "rasio-penggunaan-bahan-penolong-terhadap-bahan-baku": {
+                "H3PO4": "<=0.60kg/ton",
+                "bleaching-earth": "<=14.00kg/ton"
+            }
+        },
+        "energi": {
+            "listrik": {
+                "refiney": "<=0.60GJ/ton",
+                "fraksinasi": {
+                    "variasi-produk-56<IV<=57": "<=0.25GJolein/ton",
+                    "variasi-produk-57.01<IV<=58": "<=0.28GJolein/ton",
+                    "variasi-produk-IV>58": "<=0.31GJolein/ton"
+                },
+                "filling": "<=15.50kWh/ton",
+                "pengunaan-energi-baru-dan-terbarukan": "==1.00/100||3.00/100-total-konsumsi-energi-listrik"
+            },
+            "air": {
+                "fresh-water": "<=0.27m3/ton"
+            }
+        },
+        "proses-produksi": {
+            "refinery": ">=85/100",
+            "fraksinasi": ">=85/100"
+        },
+        "produk": "",
+        "kemasan": "",
+        "pengelolaan-limbah": "",
+        "emisi-gas-rumah-kaca": {
+            "refinery": {
+                "direct-emissions": "<=0.05CO2eq/ton",
+                "indirect-emissions": "<=0.02CO2eq/ton",
+                "total-emissions": "<=0.07CO2eq/ton"
+            },
+            "fraksinasi": {
+                "direct-emissions": "<=0.01CO2eq/ton",
+                "indirect-emissions": "<=0.02CO2eq/ton",
+                "total-emissions": "<=0.03CO2eq/ton"
+            },
+            "filling": {
+                "direct-emissions": "<=0.01CO2eq/ton",
+                "indirect-emissions": "<=0.01CO2eq/ton",
+                "total-emissions": "<=0.02CO2eq/ton"
+            }
+        }
+
+    }
+}
