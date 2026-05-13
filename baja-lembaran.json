@@ -1,153 +1,162 @@
 {
-    "name": "industri-baja-lembaran",
-    "desc": "standar-industri-hijau-untuk-baja-lembaran",
-    "metric": {
-      "bahan-baku": {
-        "sumber": [
-          "steel-slab",
-          "pelat-baja",
-          "hot-rollled-coil",
-          "cold-rolled-coil"
-        ],
-        "spesifikasi": "",
-        "penanganan": "",
-        "rasio-produk-terhadap-penggunaan-bahan-baku": {
-          "hot-metal-&-pig-iron": {
-            "blast-furnace": ">=58%"
-          },
-          "steel-slab": {
-            "basic-oxygen-furnace": ">=84%",
-            "electric-arc-furnace": ">=86%"
-          },
-          "pelat-baja": ">=86.90%",
-          "hot-rolled-coil": ">=96%",
-          "cold-rolled-coil": {
-            "reversing-mill": ">=93.50%",
-            "tandem-mill": ">=92.50%"
-          }
+  "name": "industri-baja-lembaran",
+  "desc": "standar-industri-hijau-untuk-baja-lembaran",
+  "metric": {
+    "bahan-baku": {
+      "sumber": [
+        "steel-slab",
+        "pelat-baja",
+        "hot-rollled-coil",
+        "cold-rolled-coil"
+      ],
+      "spesifikasi": "",
+      "penanganan": "",
+      "rasio-produk-terhadap-penggunaan-bahan-baku": {
+        "hot-metal-&-pig-iron": {
+          "blast-furnace": ">=58%"
         },
-        "rasio-penggunaan-bahan-baku-daur-ulang-terhadap-penggunaan-bahan-baku": {
-          "steel-slab": {
-            "basic-oxygen-furnace": ">=3%",
-            "electric-arc-furnace": {
-              "scrap": ">=60%"
-            }
-          }
+        "steel-slab": {
+          "basic-oxygen-furnace": ">=84%",
+          "electric-arc-furnace": ">=86%"
+        },
+        "pelat-baja": ">=86.90%",
+        "hot-rolled-coil": ">=96%",
+        "cold-rolled-coil": {
+          "reversing-mill": ">=93.50%",
+          "tandem-mill": ">=92.50%"
         }
       },
-      "bahan-penolong": {
-        "sumber": ["steel-slab", "cold-rolled-coil"],
-        "spesifikasi": "",
-        "penanganan": ""
-      },
-      "energi": {
-        "listrik": {
-          "steel-slab": {
-            "blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace": "<=301kWh/ton",
-            "electric-arc-furnace": {
-              "scrap": "<=762.85kWh/ton"
-            }
-          },
-          "pelat-baja": {
-            "plate-mill": "<=160kWh/ton",
-            "hot-strip-mill-dengan-shearing-line": "<=162kWh/ton"
-          },
-          "hot-rolled-coil": "<=155kWh/ton",
-          "cold-rolled-coil": {
-            "reversing-mill": "<=146.75kWh/ton",
-            "tandem-mill": "<=130kWh/ton"
+      "rasio-penggunaan-bahan-baku-daur-ulang-terhadap-penggunaan-bahan-baku": {
+        "steel-slab": {
+          "basic-oxygen-furnace": ">=3%",
+          "electric-arc-furnace": {
+            "scrap": ">=60%"
           }
-        },
-        "panas": {
-          "steel-slab": {
-            "blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace": "<=9.25GJ/ton",
-            "electric-arc-furnace": {
-              "scrap": "<=0.50GJ/ton"
-            }
-          },
-          "pelat-baja": {
-            "plate-mill": "<=2.50GJ/ton",
-            "hot-strip-mill-dengan-shearing-line": "<=2.43GJ/ton"
-          },
-          "hot-rolled-coil": "<=2.55GJ/ton",
-          "cold-rolled-coil": {
-            "reversing-mill": "<=0.55GJ/ton",
-            "tandem-mill": "1.55GJ<=/ton"
-          },
-          "air": {
-          "steel-slab": {
-            "blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace": "<=2.85m3/ton",
-            "electric-arc-furnace": {
-              "scrap": "<=2.60m3/ton"
-            }
-          },
-          "pelat-baja": {
-            "plate-mill": "<=0.47m3/ton",
-            "hot-strip-mill-dengan-shearing-line": "<=0.76m3/ton"
-          },
-          "hot-rolled-coil": "<=0.76m3/ton",
-          "cold-rolled-coil": "<=1.20m3/ton"
         }
-      },
-      "proses produksi": {
-          "steel-slab": ">=82/100",
-          "pelat-baja": ">=78/100",
-          "hot-rolled-coil": ">=75/100",
-          "cold-rolled-coil": ">=82/100"
-      },
-      "produk": {
-        
-      },
-      "kemasan": {
-
-      },
-      "pengelolaan-limbah": {
-
-      },
-      "emisi-gas-rumah-kaca": {
-        "sintered-ore": {
-          "direct-emissions-non-energi": "<=0.29CO2eq/ton",
-          "indirect-emissions": "<=0.05CO2eq/ton",
-          "total-emissions": "<=0.34CO2eq/ton"
-        },
-        "coke-di-coke-oven-plant": {
-          "direct-emissions-non-energi": "<=1.23CO2eq/ton",
-          "indirect-emissions": "<=0.19CO2eq/ton",
-          "total-emissions": "<=1.42CO2eq/ton"
-        },
-        "steel-slab-blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace-iron-ore": {
-          "emisi-gas-rumah-kaca": "1.05Co2eq/ton",
-          "direct-emissions-non-energi": "<=0.01CO2eq/ton",
-          "indirect-emissions": "<=0.27CO2eq/ton",
-          "total-emissions": "<=1.33CO2eq/ton"
-        },
-        "steel-slab-blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace-sintered-ore": {
-          "emisi-gas-rumah-kaca": "<=0.98CO2eq/ton",
-          "direct-emissions-non-energi": "<=0.01CO2eq/ton",
-          "indirect-emissions": "<=0.27CO2eq/ton",
-          "total-emissions": "<=1.26CO2eq/ton"
-        },
-        "steel-slab-blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace-scrap": {
-          "emisi-gas-rumah-kaca": "<=0.21CO2eq/ton",
-          "direct-emissions-non-energi": "<=0.03CO2eq/ton",
-          "indirect-emissions": "<=0.67CO2eq/ton",
-          "total-emissions": "<=0.91CO2eq/ton"
+      }
+    },
+    "bahan-penolong": {
+      "sumber": ["steel-slab", "cold-rolled-coil"],
+      "spesifikasi": "",
+      "penanganan": ""
+    },
+    "energi": {
+      "listrik": {
+        "steel-slab": {
+          "blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace": "<=301kWh/ton",
+          "electric-arc-furnace": {
+            "scrap": "<=762.85kWh/ton"
+          }
         },
         "pelat-baja": {
-          "direct-emissions-non-energi": "<=0.14CO2eq/ton",
-          "indirect-emissions": "<=0.13CO2eq/ton",
-          "total-emissions": "<=0.27CO2eq/ton"
+          "plate-mill": "<=160kWh/ton",
+          "hot-strip-mill-dengan-shearing-line": "<=162kWh/ton"
         },
-        "hot-rolled-coil": {
-          "direct-emissions-non-energi": "<=0.14CO2eq/ton",
-          "indirect-emissions": "<=0.14CO2eq/ton",
-          "total-emissions": "<=0.28CO2eq/ton"
-        },
+        "hot-rolled-coil": "<=155kWh/ton",
         "cold-rolled-coil": {
-          "direct-emissions-non-energi": "<=0.03CO2eq/ton",
-          "indirect-emissions": "<=0.13CO2eq/ton",
-          "total-emissions": "<=0.16CO2eq/ton"
+          "reversing-mill": "<=146.75kWh/ton",
+          "tandem-mill": "<=130kWh/ton"
         }
+      },
+      "panas": {
+        "steel-slab": {
+          "blast-furnace-coke-oven-sinter-plant-basic-oxygen-furnace": "<=9.25GJ/ton",
+          "electric-arc-furnace": {
+            "scrap": "<=0.50GJ/ton"
+          }
+        },
+        "pelat-baja": {
+          "plate-mill": "<=2.50GJ/ton",
+          "hot-strip-mill-dengan-shearing-line": "<=2.43GJ/ton"
+        },
+        "hot-rolled-coil": "<=2.55GJ/ton",
+        "cold-rolled-coil": {
+          "reversing-mill": "<=0.55GJ/ton",
+          "tandem-mill": "<=1.55GJ/ton"
+        }
+      },
+      "energi-baru-terbarukan": {
+        "penerangan": ">=3%"
+      }
+    },
+    "air": {
+      "steel-slab": {
+        "basic-oxygen-furnace": "<=2.85m3/ton",
+        "electric-arc-furnace": "<=2.60m3/ton"
+      },
+      "pelat-baja": {
+        "plate-mill": "<=0.47m3/ton",
+        "hot-strip-mill-dengan-shearing-line": "<=0.76m3/ton"
+      },
+      "hot-rolled-coil": "<=0.76m3/ton",
+      "cold-rolled-coil": "<=1.20m3/ton"
+    },
+    "proses produksi": {
+      "steel-slab": ">=82%",
+      "pelat-baja": ">=78%",
+      "hot-rolled-coil": ">=75%",
+      "cold-rolled-coil": ">=82%"
+    },
+    "produk": {},
+    "kemasan": {
+      "pelat-baja": "100%",
+      "hot-rolled-coil": "100%",
+      "cold-rolled-coil": "100%"
+    },
+    "pengelolaan-limbah": {
+      "cair": ["IPAL", "IPLC", "PPPA", "POPAL"],
+      "gas": ["PPPU", "POIPPU"],
+      "bahan-berbahaya-beracun": ["TPS"]
+    },
+    "emisi-gas-rumah-kaca": {
+      "sintered-ore": {
+        "direct-emissions-non-energi": "<=0.29CO2eq/ton",
+        "indirect-emissions": "<=0.05CO2eq/ton",
+        "total-emissions": "<=0.34CO2eq/ton"
+      },
+      "coke-di-coke-oven-plant": {
+        "direct-emissions-non-energi": "<=1.23CO2eq/ton",
+        "indirect-emissions": "<=0.19CO2eq/ton",
+        "total-emissions": "<=1.42CO2eq/ton"
+      },
+      "steel-slab": {
+        "blast-furnace-basic-oxygen-furnace": {
+          "iron-ore": {
+            "emisi-gas-rumah-kaca": "1.05Co2eq/ton",
+            "direct-emissions-non-energi": "<=0.01CO2eq/ton",
+            "indirect-emissions": "<=0.27CO2eq/ton",
+            "total-emissions": "<=1.33CO2eq/ton"
+          },
+          "sintered-ore": {
+            "emisi-gas-rumah-kaca": "<=0.98CO2eq/ton",
+            "direct-emissions-non-energi": "<=0.01CO2eq/ton",
+            "indirect-emissions": "<=0.27CO2eq/ton",
+            "total-emissions": "<=1.26CO2eq/ton"
+          }
+        },
+        "electric-arc-furnace": {
+          "scrap": {
+            "emisi-gas-rumah-kaca": "<=0.21CO2eq/ton",
+            "direct-emissions-non-energi": "<=0.03CO2eq/ton",
+            "indirect-emissions": "<=0.67CO2eq/ton",
+            "total-emissions": "<=0.91CO2eq/ton"
+          }
+        }
+      },
+      "pelat-baja": {
+        "direct-emissions-non-energi": "<=0.14CO2eq/ton",
+        "indirect-emissions": "<=0.13CO2eq/ton",
+        "total-emissions": "<=0.27CO2eq/ton"
+      },
+      "hot-rolled-coil": {
+        "direct-emissions-non-energi": "<=0.14CO2eq/ton",
+        "indirect-emissions": "<=0.14CO2eq/ton",
+        "total-emissions": "<=0.28CO2eq/ton"
+      },
+      "cold-rolled-coil": {
+        "direct-emissions-non-energi": "<=0.03CO2eq/ton",
+        "indirect-emissions": "<=0.13CO2eq/ton",
+        "total-emissions": "<=0.16CO2eq/ton"
       }
     }
   }
